@@ -1,0 +1,65 @@
+
+import QuizResultsClient from './QuizResultsClient';
+
+export async function generateStaticParams() {
+  return [
+    { id: '1' },
+    { id: '2' },
+    { id: '3' },
+    { id: 'sample-quiz' },
+    { id: 'demo-quiz' },
+    { id: '53c0e958-156b-4107-9cc6-c6db27e830a5' },
+    { id: 'a1b2c3d4-e5f6-7890-abcd-ef1234567890' },
+    { id: 'quiz-001' },
+    { id: 'quiz-002' },
+    { id: 'quiz-003' },
+    { id: 'f47ac10b-58cc-4372-a567-0e02b2c3d479' },
+    { id: 'c9bf9e57-1685-4c89-bafb-ff5af830be8a' },
+    { id: '6ba7b810-9dad-11d1-80b4-00c04fd430c8' },
+    { id: '550e8400-e29b-41d4-a716-446655440000' },
+    { id: 'test-quiz-123' },
+    { id: 'math-quiz-2024' },
+    { id: 'science-quiz-v1' },
+    { id: 'history-test-final' },
+    { id: '62708fa9-680c-427b-821d-0ef7bb87e563' },
+    { id: 'b8f3d4c2-9e1a-4b5c-8d7e-f6a9b2c3d4e5' },
+    { id: 'd7e8f9a0-b1c2-3d4e-5f6a-789b0c1d2e3f' },
+    { id: 'f1a2b3c4-d5e6-7f8a-9b0c-1d2e3f4a5b6c' },
+    { id: 'e9f8d7c6-b5a4-9382-7160-5948372615a0' },
+    { id: 'a7b8c9d0-e1f2-3456-789a-bc0def123456' },
+    { id: 'quiz-2024-001' },
+    { id: 'quiz-2024-002' },
+    { id: 'quiz-2024-003' },
+    { id: 'english-quiz-v1' },
+    { id: 'physics-quiz-final' },
+    { id: 'chemistry-test-2024' },
+    { id: 'geography-quiz-001' },
+    { id: 'biology-assessment' },
+    { id: 'literature-quiz' },
+    { id: 'coding-challenge' },
+    { id: 'general-knowledge' },
+    { id: 'trivia-night-special' },
+    { id: 'advanced-mathematics' },
+    { id: 'world-history-quiz' },
+    { id: 'quick-knowledge-test' },
+    { id: 'expert-level-challenge' },
+    { id: 'beginners-quiz' },
+    { id: 'intermediate-test' },
+    { id: 'final-exam-prep' },
+    { id: 'practice-assessment' },
+    { id: 'skill-evaluation' },
+    { id: 'knowledge-check' },
+    { id: 'competency-test' },
+    { id: 'certification-prep' },
+    { id: 'mock-exam' },
+    { id: 'review-quiz' },
+    { id: 'diagnostic-test' },
+    { id: 'placement-exam' },
+    { id: 'entrance-quiz' },
+    { id: 'scholarship-test' }
+  ];
+}
+
+export default function QuizResultsPage({ params }: { params: { id: string } }) {
+  return <QuizResultsClient quizId={params.id} />;
+}
