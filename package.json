@@ -1,23 +1,23 @@
+
 {
   "name": "excel-to-quiz",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && npx @cloudflare/next-on-pages",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@cloudflare/next-on-pages": "^1.13.16",
+    "next": "14.0.0",
+    "react": "^18",
+    "react-dom": "^18",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
-    "next": "14.0.0",
     "postcss": "^8",
-    "react": "^18",
-    "react-dom": "^18",
     "tailwindcss": "^3.3.0",
     "typescript": "^5",
     "xlsx": "^0.18.5"
